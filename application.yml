@@ -1,0 +1,13 @@
+eureka:
+  client:
+
+      #the dep serv and user serv we have to implement the usika client
+      #overthere it's true so they can be considered as client so they
+      #can connect with the usika server
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+        #the registryservice url
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
